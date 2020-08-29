@@ -27,6 +27,7 @@ KEYFILE="/config/key.pem"
 groupadd \
     --gid "${PGID}" \
     vmail
+
 useradd \
     --home-dir "/data/vmail" \
     --gid vmail \
@@ -34,6 +35,7 @@ useradd \
     --uid "${PUID}" \
     --shell "/usr/sbin/nologin" \
     vmail
+
 chown -R vmail:vmail /data/vmail
 echo "User vmail(uid:$(id -u vmail), gid:$(id -g vmail))"
 
