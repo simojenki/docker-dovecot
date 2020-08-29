@@ -1,1 +1,5 @@
+# see https://doc.dovecot.org/configuration_manual/authentication/password_schemes/
+#
+# doveadm pw -s SHA512-CRYPT 
+#
 bob:{PLAIN}password::::::
